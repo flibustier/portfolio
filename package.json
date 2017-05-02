@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "official",
-  "homepage": "http://jonathan.pl/",
+  "homepage": "https://j0hn-.github.io/",
   "twitter": "j0n_official",
   "linkedin": "https://linkedin.com/in/jplatteau/",
   "repository": "https://github.com/J0hn-/j0hn-.github.io",
@@ -18,7 +18,7 @@
   },
   "googleAnalytics": "UA-96167387-2",
   "phenomic": {
-    "CNAME": true
+    "CNAME": false
   },
   "#babel": "webpack-(development|production) are useful for webpack 2, otherwise use development|production",
   "babel": {
