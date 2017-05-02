@@ -1,10 +1,10 @@
 {
-  "private": true,
+  "private": false,
   "name": "official",
-  "homepage": "http://zensec.jonathan.pl/",
+  "homepage": "http://jonathan.pl/",
   "twitter": "j0n_official",
   "linkedin": "https://linkedin.com/in/jplatteau/",
-  "repository": "https://github.com/J0hn-/website.git",
+  "repository": "https://github.com/J0hn-/j0hn-.github.io",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:css": "stylelint \"src/**/*.css\"",
@@ -13,10 +13,10 @@
     "build": "phenomic build",
     "pretest": "npm run lint",
     "test": "npm run build",
-    "predeploy": "npm run build",
-    "deploy": "./scripts/deploy.sh"
+    "deploy": "./scripts/deploy.sh",
+    "imagemin": "./node_modules/.bin/imagemin content/assets/* --out-dir=content/assets"
   },
-  "googleAnalytics": "UA-96167387-1",
+  "googleAnalytics": "UA-96167387-2",
   "phenomic": {
     "CNAME": true
   },
