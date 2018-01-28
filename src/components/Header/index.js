@@ -26,15 +26,9 @@ const Header = (props, { metadata: { pkg } }) => (
         </Link>
         <Link
           className={ styles.link }
-          to={ "/projecs" }
+          to={ "/projects" }
         >
           { "Projects" }
-        </Link>
-        <Link
-          className={ styles.link }
-          to={ "https://zen-sec.github.io/" }
-        >
-          { "ZenSec" }
         </Link>
       </div>
       <div className={ styles.navPart2 }>

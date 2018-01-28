@@ -1,10 +1,9 @@
 {
   "private": false,
   "name": "official",
-  "homepage": "https://j0hn-.github.io/",
-  "twitter": "j0n_official",
+  "homepage": "https://flibustier.github.io/",
   "linkedin": "https://linkedin.com/in/jplatteau/",
-  "repository": "https://github.com/J0hn-/j0hn-.github.io",
+  "repository": "https://github.com/flibustier/flibustier.github.io",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:css": "stylelint \"src/**/*.css\"",

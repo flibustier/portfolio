@@ -5,25 +5,39 @@ hero: /assets/curriculum.jpg
 title: Curriculum
 ---
 
-<img style="height: 200px;border-radius: 50%;float: left;margin-right: 6em;margin-bottom: 1em;" src="/assets/zenika.png" alt="Zenika"/>
+<img style="height: 200px;border-radius: 50%; float: right; margin-left:6em;
+margin-bottom: 1em;" src="/assets/zenika.png" alt="Zenika"/>
 
 # Internship at Zenika
 > _March 2017 to August 2017_
 
-Trainee at [Zenika](http://zenika.com/) in the security agency
+Trainee at [Zenika](http://zenika.com/) in the security agency.
 
-Working on some security tools like [metasploit-framework](http://github.com/rapid7/metasploit-framework) (to which I'm contributing)
+* Creation of an internal crypto-currency and a web application to interact with the
+blockchain
+> _Multichain (Blockchain creation) - Vue JS (front-end) - Spring (back-end)_
 
-Creating [Zen Sec](#), a security blog
+* Contributing to some security tools like
+[metasploit framework](http://github.com/rapid7/metasploit-framework) and
+[ZAP](https://github.com/zaproxy/zaproxy)
+
+* Setting up Honeypots and an audit platform with _Elastic Stack_
+
+* Writing and co-writing blog posts (french, sorry!):  
+> - [How to extract credentials from Java Heap Dump](https://zen-sec.github.io/fr/java-heapdump-extraction/)
+> - [Back on NDH 2017](https://blog.zenika.com/2017/09/07/retour-sur-la-nuit-du-hack-2017/)
+> - [Diving in the depths of the internet, between Darknets and Cyber Crimes](https://blog.zenika.com/2017/09/12/plongeon-dans-les-profondeurs-de-linternet-entre-darknets-et-cybercriminalite-2/)
+> - [Metasploit in 2017](https://blog.zenika.com/2017/09/25/metasploit-en-2017-ca-donne-quoi/)
+> - [Hands on Metasploit](https://blog.zenika.com/2017/11/23/metasploit-plongeon-dans-le-framework)
 
 ---
 
 <img style="height: 200px;border-radius: 50%;float: right;margin-left: 6em;margin-bottom: 1em;" src="/assets/skillmatrix.png" alt="SkillMatrix"/>
 
 # Free time developer for Brayton Global
-> _February 2016 to August 2016_
+> _February 2016 to August 2016 - November 2017 to January 2018_
 
-* Development of the human resources management application [SkillMatrix](http://skillmatrix.be/) for [Brayton Global](http://www.braytonglobal.com/)
+* Development of the human resources management application [SkillMatrix](http://skillmatrix.be/) for [Brayton Global](http://brayton-global.co.uk/)
 > _Symfony 2.8 - Continuous Delivery - Git - Team Work_
 
 * Development of a real estate crowdfunding site for Dubai
@@ -31,10 +45,10 @@ Creating [Zen Sec](#), a security blog
 
 ---
 
-<img style="height: 200px;border-radius: 50%;float: left;margin-right: 6em;margin-bottom: 1em;" src="/assets/vemasys.png" alt="VeMaSys"/>
+<img style="height: 180px;border-radius: 50%;float: left;margin-right: 6em;margin-bottom: 1em;" src="/assets/vemasys.png" alt="VeMaSys"/>
 
 # Internship at Brayton Global
-> _July 2016 to February 2016_
+> _July 2015 to February 2016_
 
 Development of a management application (SaaS) for the inland navigation sector in an international context.
 > _Symfony 2 - Linux - Python - Team Work_
