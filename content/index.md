@@ -20,3 +20,9 @@ version](mailto:contact@jonathan.pl)!
 You can also view my [GitHub resume](https://resume.github.io/?flibustier)!
 
 ---
+
+<div align="center">
+  <img src="https://www.codewars.com/users/flibustier/badges/small">
+
+  Join me on [codewars](http://www.codewars.com/r/sVkuzw)!
+</div>

@@ -12,7 +12,7 @@
     "build": "phenomic build",
     "pretest": "npm run lint",
     "test": "npm run build",
-    "deploy": "./scripts/deploy.sh",
+    "deploy": "sh ./scripts/deploy.sh",
     "imagemin": "./node_modules/.bin/imagemin content/assets/* --out-dir=content/assets"
   },
   "googleAnalytics": "UA-96167387-2",
