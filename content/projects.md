@@ -34,6 +34,38 @@ its own code democratically, in Python.
 
 ---
 
+## Open Source Project
+
+### [E-Coin](https://e-coin.jonathan.pl/)
+
+<img style="height: 115px; float: right; margin-left: 4em;margin-bottom: 1em;" src="/assets/ecoin-dark.png" alt="VeMaSys"/>
+
+_February 2018_
+
+E-Coin is a corporate currency, using private blockchain (Multichain), Go backend and Vue.JS frontend. It serves as a demo of
+a blockchain application and can be used to create a digital asset rewarding system for your employees, build on blockchain.
+
+Repository (and documentation) on [GitHub](https://github.com/flibustier/e-coin)
+
+View functional demo here: <https://e-coin.jonathan.pl>
+
+And view the [Blockchain Explorer](https://explorer.jonathan.pl)
+
+> _Multichain - Golang - Vue.JS - Buefy - Auth0_
+
+---
+
+<img style="height: 160px;border-radius: 50%;float: left;margin-right: 6em;margin-bottom: 1em;" src="/assets/dreamhacker.png" alt="VeMaSys"/>
+
+### Dream-Hacker (Hackathon)
+> _June 2016_
+
+First place at the Solutec's Hackathon in the [Web Tower](http://www.latourduweb.com/). View presentation
+[here](https://dreamhacker.jonathan.pl) (french, sorry!)
+> _Unity - Graph Database - PHP - Network_
+
+---
+
 ## Commercial
 
 <img style="height: 130px;float: left;margin-right: 2em;margin-bottom: 1em;" src="/assets/skillmatrix-alt.png" alt="Zenika"/>
@@ -43,8 +75,6 @@ its own code democratically, in Python.
 
 Symfony 2.8 - PHP 7.2 - Linux - Git
 > (Vue JS - Element UI) - Bootstrap - JQuery
-
-
 
 <img style="height: 90px; float: right; margin-left: 2em; margin-top: 2.5em" src="/assets/brayton_logo.png" alt="SkillMatrix"/>
 
@@ -66,34 +96,6 @@ Source on [GitHub](https://github.com/flibustier/brayton-global)
 > _Symfony 2 - Linux - Python - Team Work_
 
 My participation in this project was about Symfony, backend services, Python and Linux server (system administration).
-
----
-
-## Open Source Project
-
-### [E-Coin](https://e-coin.jonathan.pl/)
-
-<img style="height: 115px; float: right; margin-left: 4em;margin-bottom: 1em;" src="/assets/ecoin-dark.png" alt="VeMaSys"/>
-
-_February 2018_
-
-E-Coin is a corporate currency, using private blockchain (Multichain), Go backend and Vue.JS frontend. It serves as a demo of
-a blockchain application and can be used to create a digital asset rewarding system for your employees, build on blockchain.
-
-Repository (and documentation) on [GitHub](https://github.com/flibustier/e-coin)
-
-> _Multichain - Golang - Vue.JS - Buefy - Auth0_
-
----
-
-<img style="height: 160px;border-radius: 50%;float: left;margin-right: 6em;margin-bottom: 1em;" src="/assets/dreamhacker.png" alt="VeMaSys"/>
-
-### Dream-Hacker (Hackathon)
-> _June 2016_
-
-First place at the Solutec's Hackathon in the [Web Tower](http://www.latourduweb.com/). View presentation
-[here](https://dreamhacker.jonathan.pl) (french, sorry!)
-> _Unity - Graph Database - PHP - Network_
 
 ---
 
