@@ -43,7 +43,7 @@ its own code democratically, in Python.
 _February 2018_
 
 E-Coin is a corporate currency, using private blockchain (Multichain), Go backend and Vue.JS frontend. It serves as a demo of
-a blockchain application and can be used to create a digital asset rewarding system for your employees, build on blockchain.
+a blockchain application and can be used to create a digital asset rewarding system for your employees, built on blockchain.
 
 Repository (and documentation) on [GitHub](https://github.com/flibustier/e-coin)
 
