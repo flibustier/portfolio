@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Kaleko';
+  src: url('~assets/fonts/Kaleko-105.woff2') format('woff2'),
+    url('~assets/fonts/Kaleko-105.woff') format('woff'),
+    url('~assets/fonts/Kaleko-105.svg') format('svg'),
+    url('~assets/fonts/Kaleko-105.ttf') format('ttf'),
+    url('~assets/fonts/Kaleko-105.eot') format('eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: 'Kaleko', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  list-style: none;
+}
+
+body {
+  transition: background 0.7s, color 0.7s;
+}
+
+.dark-mode body {
+  background-color: #222428;
+  color: #ccc;
+}
+
+a {
+  text-decoration: none;
+  color: #c67b47;
+}
+
+.dark-mode a {
+  color: #8b9856;
+}
+
+span {
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+.tag {
+  align-items: center;
+  display: inline-flex;
+  font-size: 0.78rem;
+  justify-content: center;
+  line-height: 1.3rem;
+  padding: 0.2rem 0.75rem 0 0.75rem;
+  white-space: nowrap;
+  color: #515833;
+  border: thin solid;
+  border-radius: 290486px;
+}
+
+.dark-mode .tag {
+  color: #c67b47;
+}
+
+h1 {
+  text-transform: uppercase;
+}
