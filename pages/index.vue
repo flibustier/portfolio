@@ -3,8 +3,8 @@
     <div class="container">
       <div class="left-side">
         <transition-image
-          imgClass="profile-picture"
-          darkPicture="profile-dark-test.jpg"
+          img-class="profile-picture"
+          dark-picture="profile-dark-test.jpg"
           picture="profile.webp"
         />
 

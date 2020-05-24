@@ -20,8 +20,14 @@
 <script>
 export default {
   props: {
-    picture: String,
-    darkPicture: String,
+    picture: {
+      type: String,
+      required: true
+    },
+    darkPicture: {
+      type: String,
+      default: () => ''
+    },
     imgClass: {
       type: String,
       default: () => ''
@@ -30,7 +36,7 @@ export default {
 
   computed: {
     srcDark() {
-      return require(`~/assets/images/${this.darkPicture}`)
+      return require(`~/assets/images/${this.darkPicture || this.picture}`)
     },
     src() {
       return require(`~/assets/images/${this.picture}`)

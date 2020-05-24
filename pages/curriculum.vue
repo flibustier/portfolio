@@ -10,8 +10,8 @@
           <h3>Fullstack JS</h3>
           <h4>Bedrock Streaming (ex M6 Group) [Freelancer]</h4>
           <transition-image
-            imgClass="logo"
-            darkPicture="Bedrock-Blanc.png"
+            img-class="logo"
+            dark-picture="Bedrock-Blanc.png"
             picture="Bedrock-Black.png"
           />
           <p>
@@ -35,8 +35,7 @@
           <h3>Fullstack PHP/Vue</h3>
           <h4>Brayton Global [Freelancer]</h4>
           <transition-image
-            imgClass="logo logo-small"
-            darkPicture="brayton_logo.png"
+            img-class="logo logo-small"
             picture="brayton_logo.png"
           />
           <p>
@@ -59,9 +58,9 @@
           <h3>Blockchain & Security Engineer</h3>
           <h4>Amaris</h4>
           <transition-image
-            imgClass="logo"
+            img-class="logo"
             picture="logo-amaris.png"
-            darkPicture="logo-amaris.png"
+            dark-picture="amaris-white.jpg"
           />
           <p>
             Study DLT solutions & PoC<br />
@@ -96,11 +95,7 @@
           </p>
           <h3>Security Internship</h3>
           <h4>Zenika</h4>
-          <transition-image
-            imgClass="logo"
-            picture="zenika.png"
-            darkPicture="zenika.png"
-          />
+          <transition-image img-class="logo" picture="zenika.png" />
           <p></p>
           <p>
             Creation of an internal <strong>crypto-currency</strong> connected
@@ -126,57 +121,69 @@
             <a href="https://zen-sec.github.io/fr/java-heapdump-extraction/"
               >How to extract credentials from Java Heap Dump</a
             >
-
             <a
               href="https://blog.zenika.com/2017/09/07/retour-sur-la-nuit-du-hack-2017/"
               >Back on NDH 2017</a
             >
-
             <a
               href="https://blog.zenika.com/2017/09/12/plongeon-dans-les-profondeurs-de-linternet-entre-darknets-et-cybercriminalite-2/"
               >Diving in the depths of the internet, between Darknets and Cyber
               Crimes</a
             >
-
             <a
               href="https://blog.zenika.com/2017/09/25/metasploit-en-2017-ca-donne-quoi/"
               >Metasploit in 2017</a
             >
-
             <a
               href="https://blog.zenika.com/2017/11/23/metasploit-plongeon-dans-le-framework"
               >Hands on Metasploit</a
             >
           </p>
-
           <p>
-            Lyon & Paris (France)
+            Lyon + Paris (France)
           </p>
         </div>
       </li>
       <li class="timeline-event">
         <label class="timeline-event-icon"></label>
         <div class="timeline-event-copy">
-          <p class="timeline-event-thumbnail">April 2011 - heute</p>
-          <h3>konplan gmbh</h3>
-          <h4>IT-Consultant</h4>
+          <p class="timeline-event-thumbnail">
+            February 2016 - August 2016 (~ 3 months cumulative time)
+          </p>
+          <h3>Free time developer</h3>
+          <h4>Brayton Global</h4>
+          <transition-image img-class="logo" picture="skillmatrix.png" />
           <p>
-            <strong>Systemarchitektur, Consulting</strong><br />Konzeption und
-            Modellierung von Systemen und APIs für Digital Publishing und
-            Entitlement nach SOA
+            Development of the human resources management application
+            SkillMatrix<br />
+            <strong>Symfony 2.8</strong> - Continuous Delivery - Git - Team Work
+          </p>
+          <p>
+            Development of a real estate crowdfunding website for Dubai (during
+            summer 2016)<br />
+            <strong>Symfony 3</strong> - Continuous Delivery - Git - Team Work
+          </p>
+          <p>
+            Remote + Lyon (France)
           </p>
         </div>
       </li>
       <li class="timeline-event">
         <label class="timeline-event-icon"></label>
         <div class="timeline-event-copy">
-          <p class="timeline-event-thumbnail">April 2011 - heute</p>
-          <h3>konplan gmbh</h3>
-          <h4>IT-Consultant</h4>
+          <p class="timeline-event-thumbnail">
+            July 2015 - February 2016 (8 months)
+          </p>
+          <h3>Internship</h3>
+          <h4>Brayton Global</h4>
+          <transition-image img-class="logo" picture="vemasys.png" />
           <p>
-            <strong>Systemarchitektur, Consulting</strong><br />Konzeption und
-            Modellierung von Systemen und APIs für Digital Publishing und
-            Entitlement nach SOA
+            Development of a management application (SaaS) for the inland
+            navigation sector in an international context
+          </p>
+          <p><strong>Symfony 2</strong> - Linux - Python - Team Work</p>
+          <p>
+            Brussels + Anvers (Belgium)
           </p>
         </div>
       </li>
@@ -186,11 +193,7 @@
           <p class="timeline-event-thumbnail">September 2012 - 2017</p>
           <h3>Master in Computer Science</h3>
           <h4>Polytech Lyon</h4>
-          <transition-image
-            imgClass="logo"
-            picture="polytech.png"
-            darkPicture="polytech.png"
-          />
+          <transition-image img-class="logo" picture="polytech.png" />
           <p>
             <strong>2012 - 2014</strong> : Integrated preparatory program of the
             University Polytechnic of Lyon.<br />
@@ -213,7 +216,6 @@
           </p>
           <p class="list">
             I was also a volunteer :
-
             <span
               >Member of <a href="http://insecurity-insa.fr/">Insecurity</a>,
               the security association of INSA Lyon</span
@@ -328,7 +330,7 @@ export default {
 .timeline-event-thumbnail {
   transition: box-shadow 0.5s ease-in 0.1s;
   color: white;
-  font-size: 0.75em;
+  font-size: 0.9em;
 
   background-color: black;
   box-shadow: inset 0 0 0 0em #b4927a;
@@ -336,6 +338,10 @@ export default {
   margin-bottom: 1.2em;
   padding: 0.25em 1em 0.2em 1em;
   text-transform: uppercase;
+}
+
+.dark-mode .timeline-event-thumbnail {
+  background: none;
 }
 
 .logo {
