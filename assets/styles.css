@@ -71,6 +71,21 @@ span {
   color: #c67b47;
 }
 
+.button {
+  color: #c67b47;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  color: white;
+  background-color: #c67b47;
+  border-color: #c67b47;
+}
+
 h1 {
   text-transform: uppercase;
+}
+
+strong {
+  font-weight: bold;
 }

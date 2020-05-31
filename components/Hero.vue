@@ -15,7 +15,7 @@ export default {
     },
     picture: {
       type: String,
-      default: () => undefined
+      default: () => ''
     },
     pictureCoordonates: {
       type: String,
@@ -23,7 +23,7 @@ export default {
     },
     darkPicture: {
       type: String,
-      default: () => undefined
+      default: () => ''
     },
     darkCoordonates: {
       type: String,
@@ -35,10 +35,8 @@ export default {
       return this.$colorMode.value === 'dark'
     },
     backgroundURL() {
-      if (this.isDarkMode) {
-        return this.darkPicture
-          ? require(`@/assets/images/${this.darkPicture}`)
-          : ''
+      if (this.isDarkMode && this.darkPicture) {
+        return require(`@/assets/images/${this.darkPicture}`)
       }
       return this.picture ? require(`@/assets/images/${this.picture}`) : ''
     },

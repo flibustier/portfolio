@@ -4,7 +4,7 @@
       <div class="left-side">
         <transition-image
           img-class="profile-picture"
-          dark-picture="profile-dark-test.jpg"
+          dark-picture="profile-dark.jpg"
           picture="profile.webp"
         />
 

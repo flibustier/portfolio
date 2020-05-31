@@ -5,15 +5,9 @@
       key="picture-dark"
       :class="imgClass"
       :src="srcDark"
-      alt="Profile Picture"
+      alt=""
     />
-    <img
-      v-else
-      key="picture"
-      :class="imgClass"
-      :src="src"
-      alt="Profile Picture"
-    />
+    <img v-else key="picture" :class="imgClass" :src="src" alt="" />
   </transition>
 </template>
 

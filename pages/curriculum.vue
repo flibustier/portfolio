@@ -1,6 +1,10 @@
 <template>
-  <div class="container">
-    <hero title="curriculum" picture="curriculum.jpg" />
+  <div>
+    <hero
+      title="curriculum"
+      picture="curriculum.jpg"
+      dark-picture="curriculum-dark.jpg"
+    />
 
     <ul class="timeline">
       <li class="timeline-event">
@@ -287,19 +291,15 @@ export default {
   width: 80%;
 }
 
-.timeline-event-copy h3 {
+h3 {
   text-transform: uppercase;
   font-size: 1.75em;
   margin-bottom: 0.2em;
 }
 
-.timeline-event-copy h4 {
+h4 {
   font-size: 1.2em;
   margin-bottom: 1.2em;
-}
-
-.timeline-event-copy strong {
-  font-weight: 700;
 }
 
 .timeline-event-copy p:not(.timeline-event-thumbnail) {
