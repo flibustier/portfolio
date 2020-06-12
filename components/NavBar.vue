@@ -2,9 +2,9 @@
   <header>
     <nav class="nav-bar">
       <div class="nav-block nav-left">
-        <a href="/">home</a>
-        <a href="/curriculum">Curriculum</a>
-        <a href="/projects">Projects</a>
+        <n-link to="/">home</n-link>
+        <n-link to="/curriculum">Curriculum</n-link>
+        <n-link to="/projects">Projects</n-link>
       </div>
       <div class="nav-block nav-right">
         <a class="icon icon-gh" href="https://github.com/flibustier" />
@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 header {
   position: relative;
   left: 0;
@@ -39,10 +39,6 @@ header {
   border-bottom: 1px solid;
   background-color: white;
   transition: background 0.7s;
-}
-
-.dark-mode header {
-  background-color: #222428;
 }
 
 .nav-bar {
@@ -54,6 +50,18 @@ header {
   margin: 0 auto;
   padding: 0 1rem;
   line-height: 3rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: border 0.4s;
+    border-bottom: 1px solid transparent;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -71,56 +79,26 @@ header {
   flex-direction: row;
 }
 
-.nav-bar a {
-  display: flex;
-  align-items: center;
-  padding: 0 0.5rem;
-  color: inherit;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  transition: border 0.4s;
-  border-bottom: 1px solid transparent;
-}
-
-.nav-left a:hover {
-  border-bottom-color: black;
-}
-
-.dark-mode .nav-left a:hover {
-  border-bottom-color: #fbfcfc;
+.nav-left {
+  .nuxt-link-exact-active,
+  a:hover {
+    border-bottom-color: black;
+  }
 }
 
 .icon {
   margin-right: 1.3rem;
-  width: 1.3rem;
-  height: 1.3rem;
-  background: black;
-  transition: background 0.3s ease;
 }
 
-.dark-mode .icon {
-  background: #ccc;
-  fill: #ccc;
-}
+.dark-mode {
+  header {
+    background-color: $dark-background;
+  }
 
-.icon:hover {
-  background-color: #c67b47;
-}
-
-.icon-gh {
-  mask: url(~assets/icons/github-brands.svg) center no-repeat;
-}
-
-.icon-li {
-  mask: url(~assets/icons/linkedin-in-brands.svg) center no-repeat;
-}
-
-.icon-mail {
-  mask: url(~assets/icons/envelope-open-text-light.svg) center no-repeat;
-}
-
-.dark-mode .icon-mail {
-  mask: url(~assets/icons/envelope-solid.svg) center no-repeat;
+  .nav-left {
+    a:hover {
+      border-bottom-color: #fbfcfc;
+    }
+  }
 }
 </style>

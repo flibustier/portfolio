@@ -20,17 +20,17 @@
 
       <div>
         <h1>
-          <b>Jon</b>athan Platteau –
+          <strong>Jon</strong>athan Platteau –
           <em>Freelancer Software Engineer</em>
         </h1>
         <p>
           Engineer graduated from
-          <a href="https://polytech.univ-lyon1.fr/">Polytech Lyon</a>, my skills
-          areas are:
+          <a href="https://polytech.univ-lyon1.fr/">Polytech Lyon</a>, with
+          skills in:
         </p>
         <p>
           - Web Fullstack
-          <span class="tag">JS/TS</span>
+          <span class="tag">JS/TS (ES6+)</span>
           <span class="tag">Vue.JS</span>
           <span class="tag">Node.JS</span>
           <span class="tag high">Symfony/PHP</span>
@@ -45,6 +45,7 @@
           - System & Dev/Ops
           <span class="tag">Linux</span>
           <span class="tag high">Docker</span>
+          <span class="tag mid">Terraform</span>
         </p>
         <p>
           - Security
@@ -52,9 +53,8 @@
           <span class="tag mid">Metasploit</span>
         </p>
         <p>
-          In good way: <span class="tag">GraphQL</span>
+          In a good way: <span class="tag">GraphQL</span>
           <span class="tag mid">MongoDB</span>
-          <span class="tag low">Ansible/Terraform</span>
           <span class="tag low">Rust</span>
         </p>
         <p>
@@ -90,7 +90,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .profile-picture {
   display: inline-block;
   height: 200px;
@@ -123,9 +123,20 @@ export default {
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
+    height: 100%;
+    padding-top: 1rem;
   }
   .left-side {
     margin: auto;
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    line-height: 1.5rem;
+  }
+  span {
+    margin-bottom: 0.3rem;
   }
 }
 
@@ -159,5 +170,6 @@ p {
   height: 36px;
   display: inline-block;
   padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 </style>

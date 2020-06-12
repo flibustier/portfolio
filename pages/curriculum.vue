@@ -1,6 +1,7 @@
 <template>
   <div>
     <hero
+      v-if="false"
       title="curriculum"
       picture="curriculum.jpg"
       dark-picture="curriculum-dark.jpg"
@@ -12,7 +13,7 @@
         <div class="timeline-event-copy">
           <p class="timeline-event-thumbnail">May 2019 - Now (1 year+)</p>
           <h3>Fullstack JS</h3>
-          <h4>Bedrock Streaming (ex M6 Group) [Freelancer]</h4>
+          <h4>Bedrock Streaming (ex M6 Group) [Freelance]</h4>
           <transition-image
             img-class="logo"
             dark-picture="Bedrock-Blanc.png"
@@ -37,7 +38,7 @@
             September 2018 - May 2019 (9 months)
           </p>
           <h3>Fullstack PHP/Vue</h3>
-          <h4>Brayton Global [Freelancer]</h4>
+          <h4>Brayton Global [Freelance]</h4>
           <transition-image
             img-class="logo logo-small"
             picture="brayton_logo.png"
@@ -248,7 +249,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .timeline {
   margin: 4rem auto;
   position: relative;
@@ -276,7 +277,7 @@ export default {
 
 .timeline-event:hover .timeline-event-icon {
   transform: rotate(-45deg);
-  background-color: #c67b47;
+  background-color: $primary;
 }
 
 .timeline-event:hover .timeline-event-thumbnail {

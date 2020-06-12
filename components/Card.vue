@@ -31,21 +31,24 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .card {
-  width: 20rem;
   max-width: 100%;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   border-radius: 20px;
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   flex: none;
-  width: 47%;
+  width: 45%;
+  margin: 0.75rem;
+}
 
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  margin-top: 0.75rem;
+@media screen and (max-width: 40rem) {
+  .card {
+    width: 95%;
+  }
 }
 
 .dark-mode .card {
@@ -76,6 +79,8 @@ export default {
 
 p {
   text-align: justify;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
 }
 
 footer {
