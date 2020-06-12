@@ -108,14 +108,9 @@ export default {
 
 .container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
-  align-self: center;
-  width: 100%;
   max-width: 54rem;
-  height: 100vh;
-  min-height: 100%;
+  height: 90vh;
   margin: auto;
   padding: 0 1rem;
 }
