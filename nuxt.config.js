@@ -23,7 +23,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~assets/styles.css'],
+  css: ['~assets/global.scss', '~assets/dark.scss', '~assets/icons.scss'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -34,7 +34,8 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxtjs/style-resources'
   ],
   /*
    ** Nuxt.js modules
@@ -48,5 +49,8 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  styleResources: {
+    scss: ['./assets/colors.scss']
   }
 }
