@@ -1,0 +1,28 @@
+.dark-mode {
+  body {
+    background-color: $dark-background;
+    color: $dark-color;
+  }
+
+  a {
+    color: $secondary;
+  }
+
+  span {
+    font-style: inherit;
+    font-weight: inherit;
+  }
+
+  .tag {
+    color: $primary;
+  }
+
+  .button {
+    color: $primary;
+  }
+
+  .icon {
+    background: $dark-color;
+    fill: $dark-color;
+  }
+}

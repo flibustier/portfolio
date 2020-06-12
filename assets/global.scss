@@ -23,7 +23,7 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
   border: 0;
@@ -35,51 +35,44 @@ body {
   transition: background 0.7s, color 0.7s;
 }
 
-.dark-mode body {
-  background-color: #222428;
-  color: #ccc;
-}
-
 a {
   text-decoration: none;
-  color: #c67b47;
-}
-
-.dark-mode a {
-  color: #8b9856;
-}
-
-span {
-  font-style: inherit;
-  font-weight: inherit;
+  color: $primary;
+  cursor: pointer;
 }
 
 .tag {
+  color: #5f6f21;
   align-items: center;
   display: inline-flex;
-  font-size: 0.78rem;
   justify-content: center;
   line-height: 1.3rem;
   padding: 0.2rem 0.75rem 0 0.75rem;
   white-space: nowrap;
-  color: #515833;
+}
+
+button,
+.tag {
+  font-size: 0.78rem;
   border: thin solid;
   border-radius: 290486px;
 }
 
-.dark-mode .tag {
-  color: #c67b47;
-}
-
-.button {
-  color: #c67b47;
+button {
+  color: $primary;
+  background-color: unset;
   transition: background 0.3s;
-}
-
-.button:hover {
-  color: white;
-  background-color: #c67b47;
-  border-color: #c67b47;
+  padding: 0.2rem 0.7rem;
+  &[disabled] {
+    box-shadow: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  &:hover {
+    color: white;
+    background-color: $primary;
+    border-color: $primary;
+  }
 }
 
 h1 {
@@ -88,4 +81,13 @@ h1 {
 
 strong {
   font-weight: bold;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.7s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
