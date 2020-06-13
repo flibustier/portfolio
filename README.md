@@ -1,6 +1,8 @@
-# jonathan.pl
+# Flibustier’s Portfolio
 
-> Jon’s Portfolio
+Build with [Nuxt.js](https://nuxtjs.org)
+
+Color mode (dark mode/light mode) powered with [Nuxt color-mode-module](https://github.com/nuxt-community/color-mode-module)
 
 ## Build Setup
 
@@ -18,5 +20,3 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
