@@ -4,6 +4,8 @@ Build with [Nuxt.js](https://nuxtjs.org)
 
 Color mode (dark mode/light mode) powered with [Nuxt color-mode-module](https://github.com/nuxt-community/color-mode-module)
 
+Icons are from [Font Awesome](https://fontawesome.com)
+
 ## Build Setup
 
 ```bash
