@@ -35,7 +35,13 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     '@nuxtjs/color-mode',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-96167387-2'
+      }
+    ]
   ],
   /*
    ** Nuxt.js modules
@@ -51,6 +57,6 @@ export default {
     extend(config, ctx) {}
   },
   styleResources: {
-    scss: ['./assets/colors.scss']
+    scss: ['./assets/vars.scss', './assets/colors.scss']
   }
 }
