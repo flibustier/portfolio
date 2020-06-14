@@ -30,13 +30,11 @@
   </svg>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 #icon-malt {
   background: unset;
-}
-
-#icon-malt:hover {
-  background: unset;
-  fill: #c67b47;
+  &:hover {
+    fill: $primary;
+  }
 }
 </style>

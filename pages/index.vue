@@ -45,7 +45,7 @@
           - System & Dev/Ops
           <span class="tag">Linux</span>
           <span class="tag high">Docker</span>
-          <span class="tag mid">Terraform</span>
+          <span class="tag low">Terraform</span>
         </p>
         <p>
           - Security
@@ -161,9 +161,9 @@ p {
 }
 
 .codewars-link {
+  display: inline-block;
   width: 120px;
   height: 36px;
-  display: inline-block;
   padding-top: 1rem;
   margin-bottom: 1rem;
 }

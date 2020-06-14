@@ -38,7 +38,7 @@ header {
   right: 0;
   border-bottom: 1px solid;
   background-color: white;
-  transition: background 0.7s;
+  transition: background $transition-speed;
 }
 
 .nav-bar {

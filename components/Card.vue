@@ -43,16 +43,18 @@ export default {
   flex: none;
   width: 45%;
   margin: 0.75rem;
+  border: 1px solid transparent;
+  transition: border $transition-speed;
+}
+
+.dark-mode .card {
+  border-color: $dark-color;
 }
 
 @media screen and (max-width: 40rem) {
   .card {
     width: 95%;
   }
-}
-
-.dark-mode .card {
-  border: 1px solid;
 }
 
 .card__title {
