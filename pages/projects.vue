@@ -181,9 +181,11 @@
                 <p>Unity - Graph Database - PHP - Network</p>
               </template>
               <template v-slot:footer>
-                <button href="https://dreamhacker.jonathan.pl">
-                  View Presentation
-                </button>
+                <a href="/dreamhacker-presentation/">
+                  <button>
+                    View Presentation
+                  </button>
+                </a>
               </template>
             </card>
           </div>
