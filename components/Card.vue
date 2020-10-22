@@ -54,10 +54,8 @@ export default {
   margin: 0.75rem;
   border: 1px solid transparent;
   transition: border $transition-speed;
-}
 
-.dark-mode .card {
-  // border-color: $dark-color;
+  // .dark-mode { border-color: $dark-color; }
 }
 
 @media screen and (min-width: 80rem) {
