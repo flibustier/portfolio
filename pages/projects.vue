@@ -62,7 +62,11 @@
                 />
               </template>
             </card>
-            <card title="jonathan.pl (2020 upgrade)">
+            <card
+              title="jonathan.pl (2020 update)"
+              img="nuxt-icon.png"
+              dark-img="nuxt-icon-dark.png"
+            >
               <template v-slot:text>
                 <p>
                   Homemade SCSS, built using
@@ -156,7 +160,7 @@
           <h3>Hackathon</h3>
 
           <div class="cards">
-            <card title="EU Blockathon EUIPO (2018)">
+            <card title="EU Blockathon EUIPO (2018)" img="logo-ce.png">
               <template v-slot:text>
                 <p>
                   <strong>Runner-up prize</strong> for the customs authority

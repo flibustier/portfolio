@@ -2,7 +2,12 @@
   <div class="card">
     <div class="card__content">
       <h4 class="card__title">{{ title }}</h4>
-      <transition-image v-if="img" class="card__logo" :picture="img" />
+      <transition-image
+        v-if="img"
+        class="card__logo"
+        :picture="img"
+        :dark-picture="darkImg"
+      />
       <slot name="text" class="card__text"></slot>
       <footer>
         <slot name="footer" />
@@ -26,6 +31,10 @@ export default {
     img: {
       type: String,
       default: () => ''
+    },
+    darkImg: {
+      type: String,
+      default: () => ''
     }
   }
 }
@@ -39,7 +48,7 @@ export default {
   flex-wrap: wrap;
   flex-direction: column;
   border-radius: 20px;
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  // box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   flex: none;
   width: 45%;
   margin: 0.75rem;
@@ -48,7 +57,13 @@ export default {
 }
 
 .dark-mode .card {
-  border-color: $dark-color;
+  // border-color: $dark-color;
+}
+
+@media screen and (min-width: 80rem) {
+  .card {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 40rem) {
