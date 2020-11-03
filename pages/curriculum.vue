@@ -306,8 +306,6 @@ h4 {
 
 .timeline-event-icon {
   transform: rotate(45deg);
-  transition: transform 0.2s ease-in;
-
   background-color: black;
   outline: 10px solid white;
   display: block;
@@ -317,6 +315,7 @@ h4 {
   left: 2em;
   width: 1em;
   height: 1em;
+  transition: transform 0.2s ease-in, outline 0.7s;
 }
 
 .timeline-event-thumbnail {
