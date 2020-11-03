@@ -41,13 +41,7 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     '@nuxtjs/color-mode',
-    '@nuxtjs/style-resources',
-    [
-      '@nuxtjs/google-analytics',
-      {
-        id: 'UA-96167387-2'
-      }
-    ]
+    '@nuxtjs/style-resources'
   ],
   /*
    ** Nuxt.js modules
