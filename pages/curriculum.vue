@@ -254,34 +254,31 @@ export default {
   margin: 4rem auto;
   position: relative;
   max-width: 52em;
-}
 
-.timeline:before {
-  background-color: black;
-  content: '';
-  margin-left: -1px;
-  position: absolute;
-  top: 0;
-  left: 2em;
-  width: 1px;
-  height: 100%;
-}
-
-.dark-mode .timeline:before {
-  background-color: #ccc;
+  &:before {
+    background-color: black;
+    content: '';
+    margin-left: -1px;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 1px;
+    height: 100%;
+  }
 }
 
 .timeline-event {
   position: relative;
-}
 
-.timeline-event:hover .timeline-event-icon {
-  transform: rotate(-45deg);
-  background-color: $primary;
-}
-
-.timeline-event:hover .timeline-event-thumbnail {
-  box-shadow: inset 40em 0 0 0 #c67b47;
+  &:hover {
+    .timeline-event-icon {
+      transform: rotate(-45deg);
+      background-color: $primary;
+    }
+    .timeline-event-thumbnail {
+      box-shadow: inset 40em 0 0 0 #c67b47;
+    }
+  }
 }
 
 .timeline-event-copy {
@@ -290,6 +287,10 @@ export default {
   top: -1.875em;
   left: 4em;
   width: 80%;
+
+  p:not(.timeline-event-thumbnail) {
+    padding-bottom: 1.2em;
+  }
 }
 
 h3 {
@@ -303,17 +304,12 @@ h4 {
   margin-bottom: 1.2em;
 }
 
-.timeline-event-copy p:not(.timeline-event-thumbnail) {
-  padding-bottom: 1.2em;
-}
-
 .timeline-event-icon {
-  transition: transform 0.2s ease-in;
   transform: rotate(45deg);
+  transition: transform 0.2s ease-in;
 
   background-color: black;
   outline: 10px solid white;
-  transition: outline 0.7s;
   display: block;
   margin: 0.5em 0.5em 0.5em -0.5em;
   position: absolute;
@@ -321,11 +317,6 @@ h4 {
   left: 2em;
   width: 1em;
   height: 1em;
-}
-
-.dark-mode .timeline-event-icon {
-  background-color: #ccc;
-  outline-color: #222428;
 }
 
 .timeline-event-thumbnail {
@@ -341,8 +332,19 @@ h4 {
   text-transform: uppercase;
 }
 
-.dark-mode .timeline-event-thumbnail {
-  background: none;
+.dark-mode {
+  .timeline:before {
+    background-color: #ccc;
+  }
+
+  .timeline-event-icon {
+    background-color: #ccc;
+    outline-color: #222428;
+  }
+
+  .timeline-event-thumbnail {
+    background: none;
+  }
 }
 
 .logo {
