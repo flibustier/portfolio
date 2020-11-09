@@ -7,7 +7,7 @@
       :src="srcDark"
       alt=""
     />
-    <img v-else key="picture" :class="imgClass" :src="src" alt="" />
+    <img v-else key="picture" :src="src" alt="" :class="imgClass" />
   </transition>
 </template>
 
@@ -30,10 +30,16 @@ export default {
 
   computed: {
     srcDark() {
-      return require(`~/assets/images/${this.darkPicture || this.picture}`)
+      return this.getSrc(this.darkPicture || this.picture)
     },
     src() {
-      return require(`~/assets/images/${this.picture}`)
+      return this.getSrc(this.picture)
+    }
+  },
+
+  methods: {
+    getSrc(filename) {
+      return require(`~/assets/images/${filename}`)
     }
   }
 }

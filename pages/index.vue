@@ -5,7 +5,7 @@
         <transition-image
           img-class="profile-picture"
           dark-picture="profile-dark.jpg"
-          picture="profile.png"
+          picture="profile.jpg"
         />
 
         <a href="http://www.codewars.com/r/sVkuzw" class="codewars-link">
