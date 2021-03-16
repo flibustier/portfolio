@@ -1,4 +1,5 @@
 export default {
+  target: 'static',
   /*
    ** Headers of the page
    */
@@ -40,6 +41,9 @@ export default {
         src: 'https://scripts.withcabin.com/hello.js'
       }
     ]
+  },
+  generate: {
+    exclude: ['/collector', '/e-coin', '/dreamhacker-presentation']
   },
   /*
    ** Customize the progress-bar color
