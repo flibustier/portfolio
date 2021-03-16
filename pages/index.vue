@@ -45,7 +45,7 @@
           - System & Dev/Ops
           <span class="tag">Linux</span>
           <span class="tag high">Docker</span>
-          <span class="tag low">Terraform</span>
+          <span class="tag mid">Terraform</span>
         </p>
         <p>
           - Security
@@ -53,8 +53,7 @@
           <span class="tag mid">Metasploit</span>
         </p>
         <p>
-          In a good way: <span class="tag">GraphQL</span>
-          <span class="tag mid">MongoDB</span>
+          In a good way: <span class="tag">Tensorflow</span>
           <span class="tag low">Rust</span>
         </p>
         <p>

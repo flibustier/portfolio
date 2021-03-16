@@ -11,8 +11,8 @@
       <li class="timeline-event">
         <label class="timeline-event-icon"></label>
         <div class="timeline-event-copy">
-          <p class="timeline-event-thumbnail">May 2019 - Now (1 year+)</p>
-          <h3>Fullstack JS</h3>
+          <p class="timeline-event-thumbnail">May 2019 - Now (~2 years)</p>
+          <h3>Fullstack Node.JS/Vue</h3>
           <h4>Bedrock Streaming (ex M6 Group) [Freelance]</h4>
           <transition-image
             img-class="logo"
@@ -20,10 +20,12 @@
             picture="Bedrock-Black.png"
           />
           <p>
-            Video Team 🎞<br />
-            Backend API Development with <strong>Node.JS</strong><br />
+            Video Team 🎞<br /><br />
+            <strong>AWS cloud</strong> environment with
+            <strong>Terraform</strong><br />
+            <strong>Lambda</strong> microservices and backend API with
+            <strong>Node.JS</strong><br />
             Frontend supervision UI with <strong>Vue.JS</strong><br />
-            <strong>AWS cloud</strong> environment with Terraform<br />
             Agile management
           </p>
           <p>
