@@ -1,7 +1,5 @@
 <template>
   <div>
-    <hero v-if="false" title="projects" picture="calatrava-2.jpg" />
-
     <div class="container">
       <nav>
         <a
@@ -10,7 +8,7 @@
             'Open Source',
             'Contributions',
             'Hackathon',
-            'Commercial'
+            'Commercial',
           ]"
           :key="index"
           :class="{ 'is-active': display[index] }"
@@ -25,7 +23,7 @@
 
           <div class="cards">
             <card title="Collector (2020)" img="collector.svg">
-              <template v-slot:text>
+              <template #text>
                 <p>
                   Manage your 2€ commemoratives coins collections<br />
                   Easy, free and open source<br />
@@ -33,7 +31,7 @@
                   Data are exclussively client side
                 </p>
               </template>
-              <template v-slot:footer>
+              <template #footer>
                 <a href="/collector" class="icon icon-play" />
                 <a
                   href="https://github.com/flibustier/collector"
@@ -43,7 +41,7 @@
             </card>
 
             <card title="E-Coin (2018)" img="ecoin-dark.png">
-              <template v-slot:text>
+              <template #text>
                 <p>
                   E-Coin is a corporate currency, using private blockchain
                   (<strong>Multichain</strong>), Go backend and Vue.JS
@@ -53,7 +51,7 @@
                   employees.
                 </p>
               </template>
-              <template v-slot:footer>
+              <template #footer>
                 <a href="/e-coin" class="icon icon-el" disabled />
 
                 <a
@@ -67,13 +65,13 @@
               img="nuxt-icon.png"
               dark-img="nuxt-icon-dark.png"
             >
-              <template v-slot:text>
+              <template #text>
                 <p>
                   Homemade SCSS, built using
                   <a href="https://nuxtjs.org/">Nuxt.JS</a> and Vue.JS<br />
                 </p>
               </template>
-              <template v-slot:footer>
+              <template #footer>
                 <a
                   class="icon icon-gh"
                   href="https://github.com/flibustier/flibustier.github.io/"
@@ -88,7 +86,7 @@
 
           <div class="cards">
             <card title="Metasploit Framework (2017)" img="metasploit.png">
-              <template v-slot:text>
+              <template #text>
                 <p>
                   3 pull requests on
                   <a href="https://www.metasploit.com/">Metasploit Framework</a
@@ -114,7 +112,7 @@
             </card>
 
             <card title="ZeroNet + ZAP (2017)" img="alpine.png">
-              <template v-slot:text>
+              <template #text>
                 <p>
                   <a href="https://github.com/HelloZeroNet/ZeroNet/pull/1028"
                     >Revamped Dockerfile of ZeroNet</a
@@ -134,7 +132,7 @@
             </card>
 
             <card title="Chaos the bot (2017)">
-              <template v-slot:text>
+              <template #text>
                 <p>
                   I participated in
                   <a href="https://github.com/Chaosthebot/">Chaos the bot</a>,
@@ -161,7 +159,7 @@
 
           <div class="cards">
             <card title="EU Blockathon EUIPO (2018)" img="logo-ce.png">
-              <template v-slot:text>
+              <template #text>
                 <p>
                   <strong>Runner-up prize</strong> for the customs authority
                   challenge.<br />
@@ -178,17 +176,15 @@
             </card>
 
             <card title="Solutec Hackathon (2016)" img="dreamhacker.png">
-              <template v-slot:text>
+              <template #text>
                 <p>
                   <strong>First place</strong> at the Solutec's Hackathon<br />
                 </p>
                 <p>Unity - Graph Database - PHP - Network</p>
               </template>
-              <template v-slot:footer>
+              <template #footer>
                 <a href="/dreamhacker-presentation/">
-                  <button>
-                    View Presentation
-                  </button>
+                  <button>View Presentation</button>
                 </a>
               </template>
             </card>
@@ -200,15 +196,13 @@
 
           <div class="cards">
             <card title="SkillMatrix (since 2016)" img="skillmatrix-alt.png">
-              <template v-slot:text>
-                <p>
-                  HR application for managing consultants
-                </p>
+              <template #text>
+                <p>HR application for managing consultants</p>
                 <p>Vue.JS - Symfony 4 - PHP 7.2 - Linux - Git</p>
               </template>
             </card>
             <card title="VeMaSys (2015)" img="vemasys.png">
-              <template v-slot:text>
+              <template #text>
                 <p>
                   My participation in this project was about Symfony, backend
                   services, Python and Linux server (system administration).
@@ -225,17 +219,15 @@
 
 <script>
 import Card from '~/components/Card'
-import Hero from '~/components/Hero'
 
 export default {
   components: {
     Card,
-    Hero
   },
 
   data() {
     return {
-      display: [true, false, false, false, false]
+      display: [true, false, false, false, false],
     }
   },
 
@@ -243,8 +235,8 @@ export default {
     set(index) {
       this.display = this.display.map(() => false)
       this.display[index] = true
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -266,7 +258,7 @@ nav
 
 @media screen and (min-width: 80rem)
   .container
-    padding-left: 12rem
+    padding-left: 16rem
   nav
     display: flex;
     align-items: flex-start
