@@ -38,6 +38,7 @@
         <p>
           - Software & Backend
           <span class="tag mid">Go</span>
+          <span class="tag low">Python</span>
           <span class="tag low">C/C++</span>
           <span class="tag unwanted">Java</span>
         </p>
@@ -45,17 +46,18 @@
           - System & Dev/Ops
           <span class="tag">Linux</span>
           <span class="tag high">Docker</span>
-          <span class="tag mid">Terraform</span>
+          <span class="tag high">Terraform</span>
+          <span class="tag mid">AWS</span>
         </p>
         <p>
           - Security
           <span class="tag high">Blockchain</span>
           <span class="tag mid">Metasploit</span>
         </p>
-        <p>
+        <!--p>
           In a good way: <span class="tag">Tensorflow</span>
           <span class="tag low">Rust</span>
-        </p>
+        </p-->
         <p>
           Review my career in <a href="/curriculum">curriculum</a> section and
           my works in <a href="/projects">projects</a> section. Or you can
@@ -78,14 +80,14 @@ import TransitionImage from '~/components/TransitionImage.vue'
 
 export default {
   components: {
-    TransitionImage
+    TransitionImage,
   },
 
   computed: {
     isDarkMode() {
       return this.$colorMode.value === 'dark'
-    }
-  }
+    },
+  },
 }
 </script>
 

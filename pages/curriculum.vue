@@ -1,18 +1,10 @@
 <template>
   <div>
-    <hero
-      v-if="false"
-      title="curriculum"
-      picture="curriculum.jpg"
-      dark-picture="curriculum-dark.jpg"
-    />
-
     <ul class="timeline">
-      <li class="timeline-event">
-        <label class="timeline-event-icon"></label>
+      <li class="timeline-event timeline-event-current">
         <div class="timeline-event-copy">
-          <p class="timeline-event-thumbnail">May 2019 - Now (~2 years)</p>
-          <h3>Fullstack Node.JS/Vue</h3>
+          <p class="timeline-event-thumbnail">May 2019 - Now (+2 years)</p>
+          <h3>Fullstack <span class="highlight">Node.JS</span>/Vue</h3>
           <h4>Bedrock Streaming (ex M6 Group) [Freelance]</h4>
           <transition-image
             img-class="logo"
@@ -25,44 +17,40 @@
             <strong>Terraform</strong><br />
             <strong>Lambda</strong> microservices and backend API with
             <strong>Node.JS</strong><br />
-            Frontend supervision UI with <strong>Vue.JS</strong><br />
+            <strong>Monorepo</strong> with
+            <a href="https://github.com/lerna/lerna">Lerna</a><br />
+            Frontend supervision UI with Vue.JS<br />
             Agile management
           </p>
-          <p>
-            Remote + Lyon (France)
-          </p>
+          <p>Remote + Lyon (France) 🇫🇷</p>
         </div>
       </li>
       <li class="timeline-event">
-        <label class="timeline-event-icon"></label>
         <div class="timeline-event-copy">
           <p class="timeline-event-thumbnail">
             September 2018 - May 2019 (9 months)
           </p>
-          <h3>Fullstack PHP/Vue</h3>
+          <h3>Fullstack PHP/<span class="highlight">Vue</span></h3>
           <h4>Brayton Global [Freelance]</h4>
           <transition-image
             img-class="logo logo-small"
             picture="brayton_logo.png"
           />
           <p>
-            Web development for HR management<br />
-            Mainly <strong>Vue.JS</strong> frontend<br />
+            Web application for HR management<br />
+            Mainly <strong>Vue.JS</strong> frontend (and UI design)<br />
             Along with <strong>Symfony 4</strong> (PHP) API backend<br />
             CI/CD & Linux servers
           </p>
-          <p>
-            Remote + Brussels (Belgium)
-          </p>
+          <p>Remote + Brussels (Belgium) 🇧🇪</p>
         </div>
       </li>
       <li class="timeline-event">
-        <label class="timeline-event-icon"></label>
         <div class="timeline-event-copy">
           <p class="timeline-event-thumbnail">
             March 2018 - September 2018 (7 months)
           </p>
-          <h3>Blockchain & Security Engineer</h3>
+          <h3><span class="highlight">Blockchain</span> & Security Engineer</h3>
           <h4>Amaris</h4>
           <transition-image
             img-class="logo"
@@ -75,32 +63,29 @@
             Nimiq<br />
             Also <strong>Go</strong> & Vue.JS<br />
           </p>
-          <p>
-            Lyon (France)
-          </p>
+          <p>Lyon (France) 🇫🇷</p>
         </div>
       </li>
       <li class="timeline-event">
-        <label class="timeline-event-icon"></label>
         <div class="timeline-event-copy">
           <p class="timeline-event-thumbnail">
             October 2017 - February 2018 (5 months)
           </p>
           <h4>VDS Consulting</h4>
-          <p>Improving existing software using <strong>Symfony 2</strong></p>
           <p>
-            Remote
+            Improving existing software using
+            <strong class="highlight">Symfony 2</strong>
           </p>
+          <p>Full Remote</p>
         </div>
       </li>
 
       <li class="timeline-event">
-        <label class="timeline-event-icon"></label>
         <div class="timeline-event-copy">
           <p class="timeline-event-thumbnail">
             March 2017 - August 2017 (6 months)
           </p>
-          <h3>Security Internship</h3>
+          <h3><span class="highlight">Security</span> Internship</h3>
           <h4>Zenika</h4>
           <transition-image img-class="logo" picture="zenika.png" />
           <p></p>
@@ -146,13 +131,10 @@
               >Hands on Metasploit</a
             >
           </p>
-          <p>
-            Lyon + Paris (France)
-          </p>
+          <p>Lyon + Paris (France) 🇫🇷</p>
         </div>
       </li>
       <li class="timeline-event">
-        <label class="timeline-event-icon"></label>
         <div class="timeline-event-copy">
           <p class="timeline-event-thumbnail">
             February 2016 - August 2016 (~ 3 months cumulative time)
@@ -170,13 +152,10 @@
             summer 2016)<br />
             <strong>Symfony 3</strong> - Continuous Delivery - Git - Team Work
           </p>
-          <p>
-            Remote + Lyon (France)
-          </p>
+          <p>Remote + Lyon (France) 🇫🇷</p>
         </div>
       </li>
       <li class="timeline-event">
-        <label class="timeline-event-icon"></label>
         <div class="timeline-event-copy">
           <p class="timeline-event-thumbnail">
             July 2015 - February 2016 (8 months)
@@ -189,16 +168,13 @@
             navigation sector in an international context
           </p>
           <p><strong>Symfony 2</strong> - Linux - Python - Team Work</p>
-          <p>
-            Brussels + Anvers (Belgium)
-          </p>
+          <p>Brussels + Anvers (Belgium) 🇧🇪</p>
         </div>
       </li>
       <li class="timeline-event">
-        <label class="timeline-event-icon"></label>
         <div class="timeline-event-copy">
           <p class="timeline-event-thumbnail">September 2012 - 2017</p>
-          <h3>Master in Computer Science</h3>
+          <h3><span class="highlight">Master</span> in Computer Science</h3>
           <h4>Polytech Lyon</h4>
           <transition-image img-class="logo" picture="polytech.png" />
           <p>
@@ -222,16 +198,16 @@
             <span>AI</span>
           </p>
           <p class="list">
-            I was also a volunteer :
+            I also volunteered in student associations :
             <span
               >Member of <a href="http://insecurity-insa.fr/">Insecurity</a>,
-              the security association of INSA Lyon</span
+              the IT security association of INSA Lyon</span
             >
             <span
               >President and Vice-Président of the junior enterprise association
               <a href="https://junior-polyenco.fr/">Polyenco</a></span
             >
-            <span>Photographer for the Arts Office</span>
+            <span>Photographer in the Arts Office</span>
           </p>
         </div>
       </li>
@@ -240,14 +216,12 @@
 </template>
 
 <script>
-import Hero from '~/components/Hero'
 import TransitionImage from '~/components/TransitionImage'
 
 export default {
   components: {
-    Hero,
-    TransitionImage
-  }
+    TransitionImage,
+  },
 }
 </script>
 
@@ -256,39 +230,16 @@ export default {
   margin: 4rem auto;
   position: relative;
   max-width: 52em;
-
-  &:before {
-    background-color: black;
-    content: '';
-    margin-left: -1px;
-    position: absolute;
-    top: 0;
-    left: 2em;
-    width: 1px;
-    height: 100%;
-  }
 }
 
 .timeline-event {
   position: relative;
-
-  &:hover {
-    .timeline-event-icon {
-      transform: rotate(-45deg);
-      background-color: $primary;
-    }
-    .timeline-event-thumbnail {
-      box-shadow: inset 40em 0 0 0 #c67b47;
-    }
-  }
 }
 
 .timeline-event-copy {
   padding: 2em;
   position: relative;
   top: -1.875em;
-  left: 4em;
-  width: 80%;
 
   p:not(.timeline-event-thumbnail) {
     padding-bottom: 1.2em;
@@ -297,54 +248,31 @@ export default {
 
 h3 {
   text-transform: uppercase;
-  font-size: 1.75em;
-  margin-bottom: 0.2em;
+  font-weight: normal;
+  font-size: 1.4em;
+  margin-bottom: 0.4em;
 }
 
 h4 {
   font-size: 1.2em;
+  font-weight: normal;
   margin-bottom: 1.2em;
-}
-
-.timeline-event-icon {
-  transform: rotate(45deg);
-  background-color: black;
-  outline: 10px solid white;
-  display: block;
-  margin: 0.5em 0.5em 0.5em -0.5em;
-  position: absolute;
-  top: 0;
-  left: 2em;
-  width: 1em;
-  height: 1em;
-  transition: transform 0.2s ease-in, outline 0.7s;
 }
 
 .timeline-event-thumbnail {
-  transition: box-shadow 0.5s ease-in 0.1s;
-  color: white;
   font-size: 0.9em;
-
-  background-color: black;
-  box-shadow: inset 0 0 0 0em #b4927a;
   display: inline-block;
-  margin-bottom: 1.2em;
-  padding: 0.25em 1em 0.2em 1em;
+  margin-bottom: 1em;
   text-transform: uppercase;
 }
 
+.highlight {
+  font-weight: bold;
+}
+
 .dark-mode {
-  .timeline:before {
-    background-color: #ccc;
-  }
-
-  .timeline-event-icon {
-    background-color: #ccc;
-    outline-color: #222428;
-  }
-
-  .timeline-event-thumbnail {
-    background: none;
+  .highlight {
+    color: $primary;
   }
 }
 
