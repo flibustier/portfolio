@@ -189,25 +189,27 @@
           </p>
           <p class="list">
             Topics:<br />
-            <span>Networks</span>
-            <span>DataBases, BI, Big Data</span>
-            <span>Web/Mobile Technologies</span>
-            <span>Embebed Software</span>
-            <span>Modeling and problem solving by computer</span>
-            <span>Distributed computing</span>
-            <span>AI</span>
+            <span>• Networks</span>
+            <span>• DataBases, BI, Big Data</span>
+            <span>• Web/Mobile Technologies</span>
+            <span>• Embebed Software</span>
+            <span>• Modeling and problem solving by computer</span>
+            <span>• Distributed computing</span>
+            <span>• AI</span>
           </p>
           <p class="list">
             I also volunteered in student associations :
             <span
-              >Member of <a href="http://insecurity-insa.fr/">Insecurity</a>,
-              the IT security association of INSA Lyon</span
-            >
-            <span
-              >President and Vice-Président of the junior enterprise association
+              >• <strong>President</strong> and
+              <strong>Vice-Président</strong> of the junior enterprise
+              association
               <a href="https://junior-polyenco.fr/">Polyenco</a></span
             >
-            <span>Photographer in the Arts Office</span>
+            <span
+              >• Member of <a href="http://insecurity-insa.fr/">Insecurity</a>,
+              the IT security association of INSA Lyon</span
+            >
+            <span>• Photographer in the Arts Office</span>
           </p>
         </div>
       </li>
