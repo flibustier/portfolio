@@ -47,7 +47,7 @@
           <span class="tag">Linux</span>
           <span class="tag high">Docker</span>
           <span class="tag high">Terraform</span>
-          <span class="tag mid">AWS</span>
+          <span class="tag high">AWS</span>
         </p>
         <p>
           - Security

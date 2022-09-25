@@ -22,6 +22,25 @@
           <h3>Open Source</h3>
 
           <div class="cards">
+            <card title="ArchiGuesser (2022)" img="archiguesser.png">
+              <template #text>
+                <p>
+                  A daily game for architects and enthusiasts, inspired by
+                  Framed and Wordle.<br />
+                  Each day a architectural project is picked from a curated list
+                  and you have 6 pictures to guess which one it is.<br />
+                  Built with <strong>Vue.JS</strong> 3 with TypeScript
+                </p>
+              </template>
+              <template #footer>
+                <a href="https://archiguesser.com" class="icon icon-play" />
+                <a
+                  href="https://github.com/flibustier/archiguesser"
+                  class="icon icon-gh"
+                />
+              </template>
+            </card>
+
             <card title="Collector (2020)" img="collector.svg">
               <template #text>
                 <p>

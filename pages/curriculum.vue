@@ -3,7 +3,7 @@
     <ul class="timeline">
       <li class="timeline-event timeline-event-current">
         <div class="timeline-event-copy">
-          <p class="timeline-event-thumbnail">May 2019 - Now (+2 years)</p>
+          <p class="timeline-event-thumbnail">May 2019 - Now (+3 years)</p>
           <h3>Fullstack <span class="highlight">Node.JS</span>/Vue</h3>
           <h4>Bedrock Streaming (ex M6 Group) [Freelance]</h4>
           <transition-image
@@ -16,7 +16,7 @@
             <strong>AWS cloud</strong> environment with
             <strong>Terraform</strong><br />
             <strong>Lambda</strong> microservices and backend API with
-            <strong>Node.JS</strong><br />
+            <strong>Node.JS</strong> and <strong>TypeScript</strong><br />
             <strong>Monorepo</strong> with
             <a href="https://github.com/lerna/lerna">Lerna</a><br />
             Frontend supervision UI with Vue.JS<br />
