@@ -1,0 +1,112 @@
+<label class="switch" for="switch-toggle" aria-label="Toggle Dark Mode">
+  <input id="switch-toggle" type="checkbox" role="switch"/>
+  <span class="switch__slider"></span>
+</label>
+
+<script is:inline>
+  const setTheme = (theme) => {
+    if (theme === "light") {
+      document.documentElement.classList.remove("dark-mode");
+      document.documentElement.classList.add("light-mode");
+    } else {
+      document.documentElement.classList.remove("light-mode");
+      document.documentElement.classList.add("dark-mode");
+    }
+    window.localStorage.setItem("color-mode", theme);
+  };
+
+  const theme = (() => {
+    if (
+      typeof localStorage !== "undefined" &&
+      localStorage.getItem("color-mode")
+    ) {
+      return localStorage.getItem("color-mode");
+    }
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  })();
+
+  setTheme(theme);
+
+  const handleToggleClick = () => {
+    const isDark = document.documentElement.classList.contains("dark-mode");
+    setTheme(isDark ? "light" : "dark");
+  };
+
+  const toggle = document.getElementById("switch-toggle");
+
+  toggle.addEventListener("click", handleToggleClick);
+  toggle.checked = theme === "dark";
+</script>
+
+<style>
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 23px;
+    font-size: 0.87rem;
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .switch__slider {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+    border-radius: 12px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 19px;
+      width: 19px;
+      left: 2px;
+      bottom: 1px;
+      background-color: black;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+  }
+
+  :global(.light-mode) .switch__slider {
+    border: 1px solid;
+    &:hover {
+      border-color: var(--color-primary);
+      &:before {
+        background-color: var(--color-primary);
+      }
+    }
+    &:before {
+      mask: url("/icons/sun-solid.svg") center no-repeat;
+    }
+  }
+
+  :global(.dark-mode) .switch__slider {
+    background-color: var(--dark-text-color);
+
+    &:before {
+      background-color: var(--dark-text-color);
+      mask: url("/icons/moon-solid.svg") center no-repeat;
+    }
+  }
+
+  input:checked {
+    + .switch__slider {
+      background-color: var(--color-secondary);
+      &:before {
+        transform: translateX(18px);
+      }
+    }
+  }
+</style>

@@ -1,0 +1,35 @@
+.icon {
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.3rem;
+  background: black;
+  transition: background 0.3s ease;
+}
+
+.icon:hover, .dark-mode .icon:hover {
+  background-color: var(--color-primary);
+}
+
+.icon-gh {
+  mask: url("/icons/github-brands.svg") center no-repeat;
+}
+
+.icon-li {
+  mask: url("/icons/linkedin-in-brands.svg") center no-repeat;
+}
+
+.icon-el {
+  mask: url("/icons/external-link-light.svg") center no-repeat;
+}
+
+.icon-play {
+  mask: url("/icons/play-light.svg") center no-repeat;
+}
+
+.icon-mail {
+  mask: url("/icons/envelope-light.svg") center no-repeat;
+}
+
+.dark-mode .icon-mail {
+  mask: url("/icons/envelope-solid.svg") center no-repeat;
+}

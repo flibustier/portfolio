@@ -1,0 +1,160 @@
+---
+import NavBar from "../components/NavBar.astro";
+
+import "../styles/icons.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Full Stack Engineer’s Portfolio" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Jon’s Portfolio</title>
+
+    <script is:inline async defer src="https://scripts.withcabin.com/hello.js"
+    ></script>
+  </head>
+  <body>
+    <NavBar />
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --color-primary: #c67b47;
+    --color-secondary: #8b9856;
+    --dark-background-color: #222428;
+    --dark-text-color: #ccc;
+    --transition-speed: 0.7s;
+  }
+
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    box-sizing: inherit;
+    vertical-align: baseline;
+  }
+
+  html {
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family:
+      Inter,
+      -apple-system,
+      BlinkMacSystemFont,
+      Segoe UI,
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      Fira Sans,
+      Droid Sans,
+      Helvetica Neue,
+      sans-serif;
+  }
+
+  body {
+    transition:
+      background var(--transition-speed),
+      color var(--transition-speed);
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+
+  .tag {
+    color: #5f6f21;
+    margin: 0 0.1rem;
+    padding: 0.1rem 0.75rem;
+    line-height: 1.3rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  button,
+  .tag {
+    font-size: 0.8rem;
+    border: thin solid;
+    border-radius: 1rem;
+  }
+
+  button {
+    color: var(--color-primary);
+    background-color: unset;
+    transition: background 0.3s;
+    padding: 0.2rem 0.7rem;
+
+    &[disabled] {
+      box-shadow: none;
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: white;
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity var(--transition-speed);
+  }
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+  }
+
+  .dark-mode {
+    body {
+      background-color: var(--dark-background-color);
+      color: var(--dark-text-color);
+    }
+
+    a {
+      color: var(--color-secondary);
+    }
+
+    span {
+      font-style: inherit;
+      font-weight: inherit;
+    }
+
+    .tag,
+    .button {
+      color: var(--color-primary);
+    }
+
+    .icon {
+      background: var(--dark-text-color);
+      fill: var(--dark-text-color);
+    }
+  }
+</style>

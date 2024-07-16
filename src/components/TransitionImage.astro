@@ -1,0 +1,23 @@
+---
+interface Props {
+  picture: string;
+  darkPicture?: string;
+  class?: string;
+  alt?: string;
+}
+
+const { picture, darkPicture, class: className, alt, ...rest } = Astro.props;
+
+const srcDark = `/images/` + (darkPicture || picture);
+const src = `/images/` + picture;
+---
+
+<img alt={alt} class:list={["dark-only", className]} src={srcDark} {...rest} />
+<img alt={alt} class:list={["light-only", className]} src={src} {...rest} />
+
+<style>
+  :global(.dark-mode) .light-only,
+  :global(.light-mode) .dark-only {
+    display: none;
+  }
+</style>
