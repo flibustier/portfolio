@@ -14,6 +14,7 @@ cd dist
 git init
 git add -A
 git commit -m $cdate
+git switch -c gh-pages
 
 git push -f git@github.com:flibustier/portfolio.git gh-pages
 
