@@ -15,6 +15,6 @@ git init
 git add -A
 git commit -m $cdate
 
-git push -f git@github.com:flibustier/flibustier.github.io.git gh-pages
+git push -f git@github.com:flibustier/portfolio.git gh-pages
 
 cd -
