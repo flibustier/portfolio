@@ -66,97 +66,96 @@ import TransitionImage from "../components/TransitionImage.astro";
           <span class="tag low">Rust</span>
         </p-->
       <p>
-        Review my career in <a href="/curriculum">curriculum</a> section and my works
-        in <a href="/projects">projects</a> section. Or you can
-        <a href="mailto:contact@jonathan.pl">contact me</a> for a more formal version!
-      </p>
-      <p>
-        You can also view my
-        <a href="https://resume.github.io/?flibustier">GitHub Resume</a>
+        More about <a href="/curriculum">my career</a> and <a href="/projects"
+          >my projects</a
+        >. You can also take a look at my
+        <a href="https://resume.github.io/?flibustier">GitHub Resume</a>, or <a
+          href="mailto:contact@jonathan.pl">contact me</a
+        > !<br />
       </p>
     </div>
   </div>
-</Layout>
 
-<style>
-  .profile-picture {
-    display: inline-block;
-    height: 200px;
-    width: 200px;
-    border-radius: 290486px;
-    border: 1px solid;
-  }
-
-  .left-side {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 3rem;
-  }
-
-  .container {
-    display: flex;
-    align-items: center;
-    max-width: 54rem;
-    height: 90vh;
-    margin: auto;
-    padding: 0 1rem;
-  }
-
-  @media screen and (max-width: 600px) {
-    .container {
-      flex-direction: column;
-      height: 100%;
-      padding-top: 1rem;
+  <style>
+    .profile-picture {
+      display: inline-block;
+      height: 200px;
+      width: 200px;
+      border-radius: 290486px;
+      border: 1px solid;
     }
+
     .left-side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 3rem;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      max-width: 54rem;
+      height: 90vh;
       margin: auto;
+      padding: 0 1rem;
     }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        height: 100%;
+        padding-top: 1rem;
+      }
+      .left-side {
+        margin: auto;
+      }
+      h1 {
+        text-align: center;
+      }
+      p {
+        line-height: 1.5rem;
+      }
+      span {
+        margin-bottom: 0.3rem;
+      }
+    }
+
     h1 {
-      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
     }
+
     p {
-      line-height: 1.5rem;
+      margin-bottom: 1rem;
     }
-    span {
-      margin-bottom: 0.3rem;
+
+    .high {
+      opacity: 0.85;
     }
-  }
 
-  h1 {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
+    .mid {
+      opacity: 0.7;
+    }
 
-  p {
-    margin-bottom: 1rem;
-  }
+    .low {
+      opacity: 0.55;
+    }
 
-  .high {
-    opacity: 0.85;
-  }
+    .unwanted {
+      opacity: 0.4;
+    }
 
-  .mid {
-    opacity: 0.7;
-  }
+    :global(.light-mode) .dark-only {
+      display: none;
+    }
 
-  .low {
-    opacity: 0.55;
-  }
-
-  .unwanted {
-    opacity: 0.4;
-  }
-
-  :global(.light-mode) .dark-only {
-    display: none;
-  }
-
-  .codewars-link {
-    display: inline-block;
-    width: 120px;
-    height: 36px;
-    padding-top: 1rem;
-    margin-bottom: 1rem;
-  }
-</style>
+    .codewars-link {
+      display: inline-block;
+      width: 120px;
+      height: 36px;
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</Layout>
