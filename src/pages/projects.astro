@@ -21,13 +21,14 @@ import Card from "../components/Card.astro";
       <h1>Open Source</h1>
 
       <div class="cards">
-        <Card title="ArchiGuesser (2022)" img="archiguesser.png">
+        <Card title="ArchiGuesser (2022-2024)" img="archiguesser.png">
           <p slot="text">
             A daily game for architects and enthusiasts, inspired by Framed and
             Wordle.<br />
             Each day a architectural project is picked from a curated list and you
             have 6 pictures to guess which one it is.<br /><br />
-            Built with <strong>Vue.JS</strong> 3 with <strong>TypeScript</strong><br />
+            Built with <strong>Vue.JS 3</strong> with <strong>TypeScript</strong
+            ><br />
             Backend using <strong>Rust</strong> with SQLite and Actix Web
           </p>
 
@@ -35,6 +36,23 @@ import Card from "../components/Card.astro";
             <a href="https://archiguesser.com" class="icon icon-play"></a>
             <a
               href="https://github.com/flibustier/archiguesser"
+              class="icon icon-gh"></a>
+          </Fragment>
+        </Card>
+
+        <Card title="JWT Online Cracker (2024)" img="jwt-cracker.png">
+          <p slot="text">
+            Brute-force HS256, HS384 or HS512 JWT Token from your browser. Using
+            exclusively 100% client-side JavaScript. No installation needed.<br
+            /><br />
+            Built with <strong>Vue.JS 3</strong> with <strong>TypeScript</strong
+            >
+          </p>
+
+          <Fragment slot="footer">
+            <a href="https://jwt-cracker.online" class="icon icon-play"></a>
+            <a
+              href="https://github.com/flibustier/jwt-online-cracker"
               class="icon icon-gh"></a>
           </Fragment>
         </Card>
@@ -82,7 +100,7 @@ import Card from "../components/Card.astro";
             Migration from <a href="https://nuxtjs.org/">Nuxt.JS</a> (2.x reaching
             End Of Life) and Vue.JS<br />
             To <a href="https://astro.build">Astro</a> (pre-rendered), also moving
-            back from homemade SCSS to CSS 3
+            from homemade SCSS to CSS 3
           </p>
           <Fragment slot="footer">
             <a
@@ -215,7 +233,7 @@ import Card from "../components/Card.astro";
               My participation in this project was about Symfony, backend
               services, Python and Linux server (system administration).
             </p>
-            
+
             <p>Symfony 2 - Linux - Python - Team Work</p>
           </Fragment>
         </Card>
