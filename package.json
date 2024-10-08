@@ -2,8 +2,8 @@
   "name": "jonathan.pl",
   "type": "module",
   "author": "Jonathan Platteau",
-  "license": "MIT",
-  "version": "4.0.0",
+  "license": "AGPL-3.0-only",
+  "version": "4.1.0",
   "description": "Jon’s Portfolio",
   "scripts": {
     "dev": "astro dev",
