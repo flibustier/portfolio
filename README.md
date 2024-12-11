@@ -44,8 +44,8 @@ On the other hand, I chose to abandon the [Vue Transition Component](https://vue
 
 ## 🦕 History
 
-- [v4](https://github.com/flibustier/portfolio/tree/v4) 2024 [Astro](https://astro.build/) (SSR) custom CSS + JS  
-- [v3](https://github.com/flibustier/portfolio/tree/v3) 2020 [Nuxt 2](https://nuxt.com/) (SSR) + Vue 2 + SCSS
+- [v4](https://github.com/flibustier/portfolio/tree/v4) 2024 [Astro](https://astro.build/) (SSG) custom CSS + JS  
+- [v3](https://github.com/flibustier/portfolio/tree/v3) 2020 [Nuxt 2](https://nuxt.com/) (SSG) + Vue 2 + SCSS
 - [v2](https://github.com/flibustier/portfolio/tree/v2) 2018 [Phenomic](https://github.com/MoOx/phenomic)
 - v1 Static HTML + CSS
 
