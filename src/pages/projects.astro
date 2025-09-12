@@ -21,7 +21,7 @@ import Card from "../components/Card.astro";
       <h1>Open Source</h1>
 
       <div class="cards">
-        <Card title="ArchiGuesser (2022-2024)" img="archiguesser.png">
+        <Card title="ArchiGuesser (2022-2025)" img="archiguesser.png">
           <p slot="text">
             A daily game for architects and enthusiasts, inspired by Framed and
             Wordle.<br />
@@ -40,6 +40,23 @@ import Card from "../components/Card.astro";
           </Fragment>
         </Card>
 
+        <Card title="Pokemon TCG Pocket Exchange (2025)" img="exchange.png">
+          <p slot="text">
+            Exchange your Pokemon TCG Pocket cards with anyone in the world.<br
+            /><br />
+            Built with <strong>Vue.JS 3</strong> with <strong>TypeScript</strong
+            ><br />
+            Backend using <strong>Rust</strong> with SQLite and Actix Web
+          </p>
+
+          <Fragment slot="footer">
+            <a href="https://pokemon-tcg.exchange" class="icon icon-play"></a>
+            <a
+              href="https://github.com/flibustier/pokemon-tcg-exchange"
+              class="icon icon-gh"></a>
+          </Fragment>
+        </Card>
+
         <Card title="JWT Online Cracker (2024)" img="jwt-cracker.png">
           <p slot="text">
             Brute-force HS256, HS384 or HS512 JWT Token from your browser. Using
@@ -50,7 +67,7 @@ import Card from "../components/Card.astro";
           </p>
 
           <Fragment slot="footer">
-            <a href="https://jwt-cracker.online" class="icon icon-play"></a>
+            <a href="https://jwt.cracking.ovh" class="icon icon-play"></a>
             <a
               href="https://github.com/flibustier/jwt-online-cracker"
               class="icon icon-gh"></a>
