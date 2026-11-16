@@ -11,12 +11,19 @@ importers:
       '@astrojs/check':
         specifier: 0.9.4
         version: 0.9.4(typescript@5.9.2)
+      '@sentry/browser':
+        specifier: 11.10.0
+        version: 11.10.0
       astro:
         specifier: 5.14.3
         version: 5.14.3(@types/node@24.7.1)(rollup@4.52.4)(typescript@5.9.2)(yaml@2.8.1)
       typescript:
         specifier: 5.9.2
         version: 5.9.2
+    devDependencies:
+      '@sentry/cli':
+        specifier: 3.8.2
+        version: 3.8.2
 
 packages:
 
@@ -522,6 +529,86 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@sentry/browser-utils@11.10.0':
+    resolution: {integrity: sha512-P/bYHTgj76sYBYCZa524YoZ/hZac2XCW3i3qShrMXnh7s63x1cweUjD7BDVDb0L/lGMwtuObuZeRnCif4hWLNg==}
+    engines: {node: '>=20.19.0 <22.0.0 || >=22.12.0 <23.0.0 || >=23.2.0'}
+
+  '@sentry/browser@11.10.0':
+    resolution: {integrity: sha512-kU8Inx3K/PaaDGqTu4lBW8XCYNsYNTwwPIZNIRDas/mTXtepXpM7M0KxxrTSZXBTWX0RfDU4t7vsL9ay0o4+NQ==}
+    engines: {node: '>=20.19.0 <22.0.0 || >=22.12.0 <23.0.0 || >=23.2.0'}
+
+  '@sentry/cli-darwin@3.8.2':
+    resolution: {integrity: sha512-S9xIhtpPk5uU0J0dMLz5VCtlBn+OHjG7En8HkZNGYsleNACQOwcG5wcfAnGuq+7x643KrEOubtd1VPtGfrBHsQ==}
+    engines: {node: '>=18'}
+    os: [darwin]
+
+  '@sentry/cli-linux-arm64@3.8.2':
+    resolution: {integrity: sha512-sWKkGTSOqRmGW8d2Q6ir1gBEkvfXWNbDxcf/dF0MJt8q9p594k+04GOm5mZ/VAePKGzs9W8fXE1xfmZ/UNCLcQ==}
+    engines: {node: '>=18'}
+    cpu: [arm64]
+    os: [linux, freebsd, android]
+
+  '@sentry/cli-linux-arm@3.8.2':
+    resolution: {integrity: sha512-maj9TXsnyWqNKs+UTHc+/gpsvXPVlCbheH+QHaBx8FD9u0B56REVDfxKUSCzeC9eTGDf0eKAFxbxWiMXKG4B5Q==}
+    engines: {node: '>=18'}
+    cpu: [arm]
+    os: [linux, freebsd, android]
+
+  '@sentry/cli-linux-i686@3.8.2':
+    resolution: {integrity: sha512-6aOKjTWGl5XEYCOOha4GO3aq5C7ISmYB8QECec8mFLWx0L3QoXdKtaNQoLUYslsSN0jEmFeOgA0U27Tp5OEBww==}
+    engines: {node: '>=18'}
+    cpu: [x86, ia32]
+    os: [linux, freebsd, android]
+
+  '@sentry/cli-linux-x64@3.8.2':
+    resolution: {integrity: sha512-icx2NoqaxuE4H5khIoRCB/MDX76/kKbDZFvJe/UYloGp9aucxi6c7mk8oDxFvskMFqLfbprQ6RzKH7iILmODQg==}
+    engines: {node: '>=18'}
+    cpu: [x64]
+    os: [linux, freebsd, android]
+
+  '@sentry/cli-win32-arm64@3.8.2':
+    resolution: {integrity: sha512-lSzj1ywih1madjyMrTHSjJKPhvErozSsSrG7QF6yIt7dMLYX4Qh9X3puVReh1YB5mOPCX8MJPtur67YJmR1S+w==}
+    engines: {node: '>=18'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@sentry/cli-win32-i686@3.8.2':
+    resolution: {integrity: sha512-k4dPGNNliNY46G/4hSeJygHlMoyMoL292IO+YP3MasBqyqPEy9hz6Py3FjUVW/Ckso52eoAVtGgb6DntFBjIWA==}
+    engines: {node: '>=18'}
+    cpu: [x86, ia32]
+    os: [win32]
+
+  '@sentry/cli-win32-x64@3.8.2':
+    resolution: {integrity: sha512-IBX5W2M3Zckpg3zOXfnNoayWTKhVlZN/b7ifO7dRArkOsNRzVa2lNB5M7L28O0/ZYu/8V+SnzCoHVGN9bxRdwg==}
+    engines: {node: '>=18'}
+    cpu: [x64]
+    os: [win32]
+
+  '@sentry/cli@3.8.2':
+    resolution: {integrity: sha512-JbB/UTBPRQREkI6CaxD8Cs0ppNc3YT8CROgRV7WeaqPn7mZOAgTYqtcxiW/OF7OquOIHUd0u6gu2vL+g5ITdHQ==}
+    engines: {node: '>= 18'}
+    hasBin: true
+
+  '@sentry/conventions@0.29.0':
+    resolution: {integrity: sha512-kYq9/HJ/l6MYP/srIc20dy1W4mWyJfCF0OWFF+RhBGZwyr/wCmtabRFKyw7kqM+DTwZXQOjSTSZUcJhDowcInQ==}
+    engines: {node: '>=14'}
+
+  '@sentry/core@11.10.0':
+    resolution: {integrity: sha512-l/OtTo1v+TQgZtHG2Q5N4IX+gFdAE1tZ27K/P21UCzJglWk54TPEm+d9T2lulPqMK06kZcLwDgRAhE2GO4YS5w==}
+    engines: {node: '>=20.19.0 <22.0.0 || >=22.12.0 <23.0.0 || >=23.2.0'}
+
+  '@sentry/feedback@11.10.0':
+    resolution: {integrity: sha512-jZqxVHPoUeZ6W7xSlhJdTMuM/GUJLA/K4U9OFmkP+g+TvtXhdwWxeiT23m2Wm5NmTHjaB07jSc05ayuflD8ETw==}
+    engines: {node: '>=20.19.0 <22.0.0 || >=22.12.0 <23.0.0 || >=23.2.0'}
+
+  '@sentry/replay-canvas@11.10.0':
+    resolution: {integrity: sha512-i0Fsjbl8ChzTMntLVhZvn72+p395tGNtL4iflsprnzPhTVSOGW9IYgUYfO87UcujUf5CmYn7ELBKUc5V0Ipfdg==}
+    engines: {node: '>=20.19.0 <22.0.0 || >=22.12.0 <23.0.0 || >=23.2.0'}
+
+  '@sentry/replay@11.10.0':
+    resolution: {integrity: sha512-0rcg+43tkO278VyrKcbmg0JQm2yxuguXKLbr9ieiNsynaxj22JC8baie4Uxizf2jM2ukfqA3O+o0Pbqaed8P2Q==}
+    engines: {node: '>=20.19.0 <22.0.0 || >=22.12.0 <23.0.0 || >=23.2.0'}
+
   '@shikijs/core@3.13.0':
     resolution: {integrity: sha512-3P8rGsg2Eh2qIHekwuQjzWhKI4jV97PhvYjYUzGqjvJfqdQPz+nMlfWahU24GZAyW1FxFI1sYjyhfh5CoLmIUA==}
 
@@ -977,6 +1064,9 @@ packages:
     resolution: {integrity: sha512-UcVfVfaK4Sc4m7X3dUSoHoozQGBEFeDC+zVo06t98xe8CzHSZZBekNXH+tu0NalHolcJ/QAGqS46Hef7QXBIMw==}
     engines: {node: '>=16'}
 
+  isexe@2.0.0:
+    resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
+
   js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
     hasBin: true
@@ -1245,6 +1335,10 @@ packages:
     resolution: {integrity: sha512-DEvV2ZF2r2/63V+tK8hQvrR2ZGn10srHbXviTlcv7Kpzw8jWiNTqbVgjO3IY8RxrrOUF8VPMQQFysYYYv0YZxw==}
     engines: {node: '>=6'}
 
+  progress@2.0.3:
+    resolution: {integrity: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==}
+    engines: {node: '>=0.4.0'}
+
   prompts@2.4.2:
     resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==}
     engines: {node: '>= 6'}
@@ -1254,6 +1348,9 @@ packages:
 
   property-information@7.1.0:
     resolution: {integrity: sha512-TwEZ+X+yCJmYfL7TPUOcvBZ4QfoT5YenQiJuX//0th53DE6w0xxLEtfK3iyryQFddXuvkIk51EEgrJQ0WJkOmQ==}
+
+  proxy-from-env@1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
@@ -1411,6 +1508,7 @@ packages:
   tsconfck@3.1.6:
     resolution: {integrity: sha512-ks6Vjr/jEw0P1gmOVwutM3B7fWxoWBL2KRDb1JfqGVawBmO5UsvmWOQFGHBPl5yxYz4eERr19E6L7NMv+Fej4w==}
     engines: {node: ^18 || >=20}
+    deprecated: unmaintained
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
@@ -1447,6 +1545,10 @@ packages:
 
   undici-types@7.14.0:
     resolution: {integrity: sha512-QQiYxHuyZ9gQUIrmPo3IA+hUl4KYk8uSA7cHrcKd/l3p1OTpZcM0Tbp9x7FAtXdAYhlasd60ncPpgu6ihG6TOA==}
+
+  undici@6.29.1:
+    resolution: {integrity: sha512-EvRlUt/QqAEvXdQeRMYUfwOQsfzpDztykrG2owGEE/rBOBoYv9uF39ZzsNDh4lTFHhTr2XOZjKkYgueD12ZmGA==}
+    engines: {node: '>=18.17'}
 
   unicode-properties@1.4.1:
     resolution: {integrity: sha512-CLjCCLQ6UuMxWnbIylkisbRj31qxHPAurvena/0iwSVbQ2G1VY5/HjV0IRabOEbDHlzZlRdCrD4NhB0JtU40Pg==}
@@ -1645,16 +1747,22 @@ packages:
     resolution: {integrity: sha512-KxFt4zydyJYYI0kFAcWPTh4u0Ha36TASPZkAnNY784GtgajerUqM80nX/W1d0wVhmcOFfAxkVsf/Ed+tiYU7ng==}
     peerDependencies:
       '@volar/language-service': ~2.4.0
+      typescript: '*'
     peerDependenciesMeta:
       '@volar/language-service':
+        optional: true
+      typescript:
         optional: true
 
   volar-service-typescript@0.0.62:
     resolution: {integrity: sha512-p7MPi71q7KOsH0eAbZwPBiKPp9B2+qrdHAd6VY5oTo9BUXatsOAdakTm9Yf0DUj6uWBAaOT01BSeVOPwucMV1g==}
     peerDependencies:
       '@volar/language-service': ~2.4.0
+      typescript: '*'
     peerDependenciesMeta:
       '@volar/language-service':
+        optional: true
+      typescript:
         optional: true
 
   volar-service-yaml@0.0.62:
@@ -1715,9 +1823,17 @@ packages:
   web-namespaces@2.0.1:
     resolution: {integrity: sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ==}
 
+  web-vitals@6.2.3:
+    resolution: {integrity: sha512-Dmy+vdO1UPMqXiAtZSNayhl4f794Bxfd94W4HIj2HlYtczEQfEOon969memlcpcHrTuOKLa5baFjX7WbgmOq+A==}
+
   which-pm-runs@1.1.0:
     resolution: {integrity: sha512-n1brCuqClxfFfq/Rb0ICg9giSZqCS+pLtccdag6C2HyufBrh3fBOiy9nb6ggRMvWOVH5GrdJskj5iGTZNxd7SA==}
     engines: {node: '>=4'}
+
+  which@2.0.2:
+    resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
+    engines: {node: '>= 8'}
+    hasBin: true
 
   widest-line@5.0.0:
     resolution: {integrity: sha512-c9bZp7b5YtRj2wOe6dlj32MK+Bx/M/d+9VB2SHM1OtsUHR0aV0tdP6DWh/iMt0kWi1t5g1Iudu6hQRNd1A4PVA==}
@@ -1820,8 +1936,8 @@ snapshots:
       volar-service-emmet: 0.0.62(@volar/language-service@2.4.23)
       volar-service-html: 0.0.62(@volar/language-service@2.4.23)
       volar-service-prettier: 0.0.62(@volar/language-service@2.4.23)
-      volar-service-typescript: 0.0.62(@volar/language-service@2.4.23)
-      volar-service-typescript-twoslash-queries: 0.0.62(@volar/language-service@2.4.23)
+      volar-service-typescript: 0.0.62(@volar/language-service@2.4.23)(typescript@5.9.2)
+      volar-service-typescript-twoslash-queries: 0.0.62(@volar/language-service@2.4.23)(typescript@5.9.2)
       volar-service-yaml: 0.0.62(@volar/language-service@2.4.23)
       vscode-html-languageservice: 5.5.1
       vscode-uri: 3.1.0
@@ -2175,6 +2291,81 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.52.4':
     optional: true
+
+  '@sentry/browser-utils@11.10.0':
+    dependencies:
+      '@sentry/conventions': 0.29.0
+      '@sentry/core': 11.10.0
+      web-vitals: 6.2.3
+
+  '@sentry/browser@11.10.0':
+    dependencies:
+      '@sentry/browser-utils': 11.10.0
+      '@sentry/conventions': 0.29.0
+      '@sentry/core': 11.10.0
+      '@sentry/feedback': 11.10.0
+      '@sentry/replay': 11.10.0
+      '@sentry/replay-canvas': 11.10.0
+
+  '@sentry/cli-darwin@3.8.2':
+    optional: true
+
+  '@sentry/cli-linux-arm64@3.8.2':
+    optional: true
+
+  '@sentry/cli-linux-arm@3.8.2':
+    optional: true
+
+  '@sentry/cli-linux-i686@3.8.2':
+    optional: true
+
+  '@sentry/cli-linux-x64@3.8.2':
+    optional: true
+
+  '@sentry/cli-win32-arm64@3.8.2':
+    optional: true
+
+  '@sentry/cli-win32-i686@3.8.2':
+    optional: true
+
+  '@sentry/cli-win32-x64@3.8.2':
+    optional: true
+
+  '@sentry/cli@3.8.2':
+    dependencies:
+      progress: 2.0.3
+      proxy-from-env: 1.1.0
+      undici: 6.29.1
+      which: 2.0.2
+    optionalDependencies:
+      '@sentry/cli-darwin': 3.8.2
+      '@sentry/cli-linux-arm': 3.8.2
+      '@sentry/cli-linux-arm64': 3.8.2
+      '@sentry/cli-linux-i686': 3.8.2
+      '@sentry/cli-linux-x64': 3.8.2
+      '@sentry/cli-win32-arm64': 3.8.2
+      '@sentry/cli-win32-i686': 3.8.2
+      '@sentry/cli-win32-x64': 3.8.2
+
+  '@sentry/conventions@0.29.0': {}
+
+  '@sentry/core@11.10.0':
+    dependencies:
+      '@sentry/conventions': 0.29.0
+
+  '@sentry/feedback@11.10.0':
+    dependencies:
+      '@sentry/core': 11.10.0
+
+  '@sentry/replay-canvas@11.10.0':
+    dependencies:
+      '@sentry/core': 11.10.0
+      '@sentry/replay': 11.10.0
+
+  '@sentry/replay@11.10.0':
+    dependencies:
+      '@sentry/browser-utils': 11.10.0
+      '@sentry/core': 11.10.0
 
   '@shikijs/core@3.13.0':
     dependencies:
@@ -2790,6 +2981,8 @@ snapshots:
     dependencies:
       is-inside-container: 1.0.0
 
+  isexe@2.0.0: {}
+
   js-yaml@4.1.0:
     dependencies:
       argparse: 2.0.1
@@ -3225,6 +3418,8 @@ snapshots:
 
   prismjs@1.30.0: {}
 
+  progress@2.0.3: {}
+
   prompts@2.4.2:
     dependencies:
       kleur: 3.0.3
@@ -3233,6 +3428,8 @@ snapshots:
   property-information@6.5.0: {}
 
   property-information@7.1.0: {}
+
+  proxy-from-env@1.1.0: {}
 
   queue-microtask@1.2.3: {}
 
@@ -3502,6 +3699,8 @@ snapshots:
 
   undici-types@7.14.0: {}
 
+  undici@6.29.1: {}
+
   unicode-properties@1.4.1:
     dependencies:
       base64-js: 1.5.1
@@ -3644,13 +3843,14 @@ snapshots:
     optionalDependencies:
       '@volar/language-service': 2.4.23
 
-  volar-service-typescript-twoslash-queries@0.0.62(@volar/language-service@2.4.23):
+  volar-service-typescript-twoslash-queries@0.0.62(@volar/language-service@2.4.23)(typescript@5.9.2):
     dependencies:
       vscode-uri: 3.1.0
     optionalDependencies:
       '@volar/language-service': 2.4.23
+      typescript: 5.9.2
 
-  volar-service-typescript@0.0.62(@volar/language-service@2.4.23):
+  volar-service-typescript@0.0.62(@volar/language-service@2.4.23)(typescript@5.9.2):
     dependencies:
       path-browserify: 1.0.1
       semver: 7.7.3
@@ -3660,6 +3860,7 @@ snapshots:
       vscode-uri: 3.1.0
     optionalDependencies:
       '@volar/language-service': 2.4.23
+      typescript: 5.9.2
 
   volar-service-yaml@0.0.62(@volar/language-service@2.4.23):
     dependencies:
@@ -3724,7 +3925,13 @@ snapshots:
 
   web-namespaces@2.0.1: {}
 
+  web-vitals@6.2.3: {}
+
   which-pm-runs@1.1.0: {}
+
+  which@2.0.2:
+    dependencies:
+      isexe: 2.0.0
 
   widest-line@5.0.0:
     dependencies:

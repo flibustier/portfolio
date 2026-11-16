@@ -8,6 +8,9 @@ cdate=$(date +"%m-%d-%Y")
 # build
 pnpm build
 
+# Source maps go to Bugsink, not to the site
+./sourcemaps.sh
+
 # navigate into the build output directory
 cd dist
 
