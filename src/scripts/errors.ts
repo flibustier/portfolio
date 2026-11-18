@@ -1,9 +1,12 @@
 // Errors in the browser are sent to Bugsink (https://bug.cracking.ovh), which speaks the Sentry
 // protocol. The Sentry SDK weighs about 20 KB gzipped, so it is only downloaded after the first
-// error: a visit without errors costs nothing. Only production builds report.
+// error: a visit without errors costs nothing. Only production builds report, and only with a
+// BUGSINK_DSN in consts.ts: leave it empty and the site has neither the listeners nor the SDK.
 //
 // An inline script in Layout.astro listens from the start of the page and keeps the errors in
 // window.__errors. This module runs later: it reports them, then reports the next ones directly.
+
+import { BUGSINK_DSN } from "../consts";
 
 declare global {
   interface Window {
@@ -16,12 +19,12 @@ type Send = (error: unknown) => void;
 let sdk: Promise<Send> | undefined;
 
 const report = (error: unknown) => {
-  sdk ??= import("./errors-sdk").then(({ start }) => start());
+  sdk ??= import("./errors-sdk").then(({ start }) => start(BUGSINK_DSN));
   // If the SDK can't be loaded (offline…), there is nothing more to do
   sdk.then((send) => send(error)).catch(() => {});
 };
 
-if (import.meta.env.PROD) {
+if (import.meta.env.PROD && BUGSINK_DSN) {
   const queued = Array.isArray(window.__errors) ? window.__errors : [];
   window.__errors = { push: report };
   queued.forEach(report);
