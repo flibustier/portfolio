@@ -8,13 +8,11 @@ import {
   makeFetchTransport,
 } from "@sentry/browser";
 
-// Loaded by errors.ts after the first error only.
+// Loaded by errors.ts after the first error only. The DSN comes from errors.ts.
 
-const DSN = "https://f319bc8d47c947bab0b79956c1927aba@bug.cracking.ovh/3";
-
-export const start = () => {
+export const start = (dsn: string) => {
   const client = new BrowserClient({
-    dsn: DSN,
+    dsn,
     environment: location.hostname === "jonathan.pl" ? "production" : "local",
     transport: makeFetchTransport,
     stackParser: defaultStackParser,
