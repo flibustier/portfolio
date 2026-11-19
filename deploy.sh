@@ -15,6 +15,12 @@ pnpm build
 cd dist
 
 git init
+
+# The files of the previous builds stay a week, for the pages opened before: the previous deploy is
+# fetched to take them back
+git fetch --depth 1 git@github.com:flibustier/portfolio.git gh-pages
+../keep-old-assets.sh _astro FETCH_HEAD
+
 git add -A
 git commit -m $cdate
 git switch -c gh-pages
